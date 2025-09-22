@@ -157,13 +157,7 @@ spec:
       **Tool Response Handling**: When using data from previous tool calls:
       - Remove ALL formatting characters like <none>, \u003cnone\u003e
       - Escape special characters - use proper JSON formatting
-    tools:
-    - type: McpServer
-      mcpServer:
-        name: kagent-querydoc
-        kind: Service
-        toolNames:
-          - query_documentation    
+    tools:   
     - type: McpServer
       mcpServer:
         name: agw-mcp-servers
