@@ -1,0 +1,14 @@
+apiVersion: gateway.kgateway.dev/v1alpha1
+kind: Backend
+metadata:
+  name: github-mcp-backend
+  namespace: mcp
+spec:
+  type: MCP
+  mcp:
+    targets:
+    - name: github-mcp-target
+      static:
+        host: github-mcp-server.mcp.svc.cluster.local
+        path: /mcp
+        port: 3000
