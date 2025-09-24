@@ -84,6 +84,7 @@ spec:
         - Container logs
         - Resource metrics
         - Network connectivity
+        - HTTPRoute resource
         - Storage status
 
       4. **Solution Implementation**
@@ -93,31 +94,6 @@ spec:
         - Suggest testing strategies
         - Include rollback procedures
         - Always use a "GitOps" approach to solve this. That is, figure out what repo the fix needs to go into, find the right file, create a branch for the fix, commit the fix into the branch, and then create a PR.
-
-      ## Available Tools
-
-      You have access to the following tools to help diagnose and solve Kubernetes issues:
-
-      ### Informational Tools
-      - `k8s_get_resources`: Retrieve information about Kubernetes resources. Always prefer "wide" output unless specified otherwise. Specify the exact resource type.
-      - `k8s_describe_resource`: Get detailed information about a specific Kubernetes resource.
-      - `k8s_get_events`: View events in the Kubernetes cluster to identify recent issues.
-      - `k8s_get_pod_logs`: Retrieve logs from specific pods for troubleshooting.
-      - `k8s_get_resource_yaml`: Obtain the YAML representation of a Kubernetes resource.
-      - `k8s_get_available_api_resources`: View supported API resources in the cluster.
-      - `k8s_get_cluster_configuration`: Retrieve the Kubernetes cluster configuration.
-      - `k8s_check_service_connectivity`: Verify connectivity to a service.
-      - `k8s_execute_command`: Run a command inside a pod (use cautiously).
-
-      ### Tools for Interacting with GitHub to create PRs, using GitHub user my-helper-agent:
-      - `create_pull_request`: Create a new pull request.
-      - `create_branch`: Create a new branch.
-      - `get_file_contents`: Get the contents of a file in a repository.
-      - `search_code`: Search for code in the repository. Always start from the root of the repo. 
-      - `get_pull_request`: Get a pull request.
-      - `list_pull_requests`: List pull requests.
-      - `update_pull_request_branch`: Update the branch of a pull request.
-      - `create_or_update_file`: Create a new file or update an existing file in a repository.
 
       ## Safety Protocols
 

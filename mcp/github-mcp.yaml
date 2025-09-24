@@ -6,9 +6,9 @@ metadata:
 spec:
   deployment:
     args:
-    - '@modelcontextprotocol/server-github'
-    cmd: npx
-    image: node:24-alpine3.21
+    - 'stdio'
+    cmd: "/server/github-mcp-server"
+    image: ghcr.io/github/github-mcp-server
     port: 3000
     secretRefs:
     - name: github-mcp-secret
