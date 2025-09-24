@@ -1,4 +1,4 @@
-This repo contains the code for the AIRE-agent. You can deploy it using kubectl or a GitOps tool like Argo.
+This repo contains the code for the AI Agents in Kubernetes book.
 
 * Deploy the AIRE-agent using kubectl:
 
