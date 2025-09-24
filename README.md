@@ -3,7 +3,7 @@ This repo contains the code for the AIRE-agent. You can deploy it using kubectl 
 1. Deploy the AIRE-agent using kubectl:
 
 ```bash
-kubectl apply -f aire-agent.yaml
+kubectl apply -f AIRE-agent/aire-agent.yaml
 ```
 
 1. Deploy the secret for the model:
