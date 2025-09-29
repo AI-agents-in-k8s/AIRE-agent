@@ -5,12 +5,10 @@ metadata:
   namespace: mcp
 spec:
   parentRefs:
-    - group: gateway.networking.k8s.io
-      kind: Gateway
-      name: agentgateway
-      namespace: kgateway-system
+  - name: agentgateway
   rules:
     - backendRefs:
       - name: github-mcp-backend
         group: gateway.kgateway.dev
         kind: Backend
+

@@ -136,7 +136,7 @@ spec:
     tools:   
     - type: McpServer
       mcpServer:
-        name: github-mcp-server
+        name: agw-mcp-servers
         kind: RemoteMCPServer
         apiGroup: kagent.dev       
         toolNames:

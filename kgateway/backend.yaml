@@ -7,8 +7,10 @@ spec:
   type: MCP
   mcp:
     targets:
-    - name: github-mcp-target
+    - name: mcp-target
       static:
         host: github-mcp-server.mcp.svc.cluster.local
-        path: /mcp
         port: 3000
+        protocol: StreamableHTTP
+
+
