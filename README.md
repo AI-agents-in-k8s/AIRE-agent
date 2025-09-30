@@ -16,8 +16,7 @@ kubectl create secret generic kagent-google -n kagent  --from-literal=GOOGLE_API
 3. Deploy the model configs using kubectl:
 
 ```bash
-kubectl apply -f model-config-gemini.yaml
-kubectl apply -f model-config-gemini-pro.yaml
+kubectl apply -f models/
 ```
 
 Update aire-agent to use the preferred model, if necessary.
