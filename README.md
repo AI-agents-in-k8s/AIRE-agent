@@ -1,9 +1,10 @@
 This repo contains the code for the AI Agents in Kubernetes book.
 
-Pre-requisites:
-- Have a working Kubernetes cluster
-- Installed kgateway (with agentgateway data plane enabled), kagent and kmcp (unless it is merged into kagent).
+## Pre-requisites:
+* Have a working Kubernetes cluster
+* Installed kgateway (with agentgateway data plane enabled), kagent and kmcp (unless it is merged into kagent).
 
+## Steps
 1. Deploy the AIRE-agent using kubectl:
 
 ```bash
