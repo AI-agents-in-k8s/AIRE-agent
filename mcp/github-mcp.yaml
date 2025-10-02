@@ -3,6 +3,8 @@ kind: MCPServer
 metadata:
   name: github-mcp-server
   namespace: mcp
+  labels:
+    kagent.dev/discovery: disabled
 spec:
   deployment:
     args:

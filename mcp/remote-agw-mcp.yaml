@@ -4,7 +4,7 @@ metadata:
   name: agw-mcp-servers
   namespace: kagent
 spec:
-  description: ""
+  description: "Agentgateway as MCP gateway for MCP servers"
   protocol: STREAMABLE_HTTP
   sseReadTimeout: 5m0s
   terminateOnClose: true
